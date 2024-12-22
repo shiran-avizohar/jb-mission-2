@@ -1,0 +1,50 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(91, 25, 25, 0.1);
+}
+
+/* Styling for input fields and buttons */
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;  
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the statistics section */
+#stats {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+

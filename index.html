@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="/assets/jb/app.js" defer></script>
+    <title>Country Search</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Country Search</h2>
+        <input type="text" id="countryInput" placeholder="Enter country name (e.g., United)">
+        <button id="searchButton">Search</button>
+        <button id="allButton">Show All Countries</button>
+        
+        <!-- Results Section -->
+        <h3>Results</h3>
+        <table id="resultsTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will go here -->
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- Statistics Section -->
+        <h3>Statistics</h3>
+        <p id="stats">No data to display</p>
+        <hr> 
+        
+        <!-- Population Table -->
+        <h3>Country Population</h3>
+        <table id="populationTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Population data will be populated here -->
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- Region Table -->
+        <h3>Countries by Region</h3>
+        <table id="regionTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Number of Countries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Region data will be populated here -->
+            </tbody>
+        </table>
+        <hr>
+
+        <!-- Language Table -->
+        <h3>Languages</h3>
+        <table id="languageTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Number of Countries Using</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Language data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
