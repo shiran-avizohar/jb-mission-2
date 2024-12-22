@@ -1,5 +1,6 @@
 "use strict";
 
+// Country information API URL
 const apiUrl = "https://restcountries.com/v3.1/";
 
 // Fetch all countries
@@ -87,21 +88,20 @@ function renderStats(countries) {
     document.getElementById('stats').innerHTML = stats;
 }
 
-// Render currency statistics
-function renderCurrencyStats(countries) {
-    const currencyCount = countries.reduce((acc, country) => {
-        const currencies = country.currencies || {};
-        Object.values(currencies).forEach(currency => {
-            const currencyName = currency.name || "Unknown";
-            acc[currencyName] = (acc[currencyName] || 0) + 1;
+// Render language statistics
+function renderLanguageStats(countries) {
+    const languageCount = countries.reduce((acc, country) => {
+        const languages = country.languages || {};  // Get the languages spoken in the country
+        Object.values(languages).forEach(language => {
+            acc[language] = (acc[language] || 0) + 1;
         });
         return acc;
     }, {});
 
-    const tableBody = document.querySelector('#currencyTable tbody');
-    tableBody.innerHTML = Object.entries(currencyCount).map(([currency, count]) => `
+    const tableBody = document.querySelector('#languageTable tbody');
+    tableBody.innerHTML = Object.entries(languageCount).map(([language, count]) => `
         <tr>
-            <td>${currency}</td>
+            <td>${language}</td>
             <td>${count}</td>
         </tr>
     `).join('');
@@ -117,7 +117,7 @@ document.getElementById('searchButton').addEventListener('click', async () => {
         renderPopulationTable(countries); // Render country population table
         renderStats(countries);
         renderRegionTable(countries);
-        renderCurrencyStats(countries);  // Render currency statistics
+        renderLanguageStats(countries);  // Render language statistics
     }
 });
 
@@ -129,6 +129,6 @@ document.getElementById('allButton').addEventListener('click', async () => {
         renderPopulationTable(countries); // Render country population table
         renderStats(countries);
         renderRegionTable(countries);
-        renderCurrencyStats(countries);  // Render currency statistics
+        renderLanguageStats(countries);  // Render Language statistics
     }
 });
