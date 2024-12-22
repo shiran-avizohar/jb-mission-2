@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="/assets/jb/app.js" defer></script>
+    <title>Country Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Search</h1>
+        <input type="text" id="countryInput" placeholder="Enter country name (e.g., United)">
+        <button id="searchButton">Search</button>
+        <button id="allButton">Show All Countries</button>
+        
+        <!-- Results Section -->
+        <h2>Results</h2>
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will go here -->
+            </tbody>
+        </table>
+
+        <!-- Statistics Section -->
+        <h2>Statistics</h2>
+        <p id="stats">No data to display</p>
+        
+        <!-- Population Table -->
+        <h3>Country Population</h3>
+        <table id="populationTable">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Population data will be populated here -->
+            </tbody>
+        </table>
+
+        <!-- Region Table -->
+        <h3>Countries by Region</h3>
+        <table id="regionTable">
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Number of Countries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Region data will be populated here -->
+            </tbody>
+        </table>
+
+        <!-- Currency Table -->
+        <h2>Currencies</h2>
+        <table id="currencyTable">
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Number of Countries Using</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Currency data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
